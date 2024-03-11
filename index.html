@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="banner"><img src="./images/banner.webp" width="100%" height="56"   alt=""></div>
+        <section id="header">
+        <div class="main-header">
+            <div id="logo">
+                <h1><a href="./index.html">MiShop</a></h1>
+                
+            </div>
+                <div class="search-bar font-14">
+                    <form action="" id="header-search-form">
+                      <input type="text" placeholder="Nhập từ khóa">
+                      <select name="category" id="category-select">
+                        <option value="0">Chọn danh mục</option>
+                        <option value="Điện-thoại-Phụ-kiện">Điện thoại & Phụ kiện</option>
+                        <option value="Đồ-chơi">Thời trang nam</option>
+                        <option value="Làm-đẹp">Thời trang nữ</option>
+                      </select>
+                      <button type="submit" class="search-icon ti-search"></button>
+                    </form>
+                </div>
+                <div class="top-right font-14">
+                    <div class="user-account">
+                        <i class="account-icon"><img src="./images/user-icon.webp" alt=""></i>
+                    <div class="login-register-section font-14" >
+                        <div class="login-header">
+                            <a href="./login.html">Đăng nhập</a>
+                            &
+                            <a href="./Register.html">Đăng ký</a>
+                        </div>
+                        <div class="user-header font-16">
+                            <a href="./login.html">Tài Khoản</a>
+                        </div>
+                        
+                    </div>                        
+                    </div>
+
+
+                    <div class="cart">
+                        <i class="cart-icon" ><a href="./product.html"><img src="./images/cart.webp" alt="" ></a></i>
+                        <div class="text-cart">
+                            <div class="header-cart">
+                                <p><a href="./cart.html">Giỏ hàng của bạn</a></p>
+                            </div>
+                            <div>
+                                <p class="quantity-number">(0)</p>
+                                <p class="quantity"> Sản phẩm </p>                                       
+                            </div>
+                        
+                        </div>
+             
+
+                    </div>
+                </div>                
+        </div> 
+        <div class="clear"></div>
+
+        </section>
+        
+        <!-- Bắt đầu nav -->
+        <section id="nav">
+            <div class="product-category">
+                <div class="open-menu-left">
+                    <div class="category-bar-mobile">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="category-title">DANH MỤC SẢN PHẨM</div>
+                    <div class="angle-down">
+                      <i class="ti-angle-down"></i>
+                    </div>
+                </div>
+                <div class="open-menu-nav">
+                    <ul>
+                        <li><a href="#">
+                            <img src="./images/open1.jpg"   class="open-menu-img" alt="">
+                            <span class="open-menu-text"> ĐIỆN THOẠI & PHỤ KIỆN</span></a></li>
+                        <li><a href="#">
+                            <img src="./images/open2.jpg"   class="open-menu-img" alt="">
+                            <span class="open-menu-text"> ĐỒNG HỒ</span></a></li>
+                        <li><a href="#">
+                            <img src="./images/open3.jpg"   class="open-menu-img" alt="">
+                            <span class="open-menu-text"> THỜI TRANG NAM</span></a></li>
+                        <li><a href="#">
+                            <img src="./images/open4.jpg"   class="open-menu-img" alt="">
+                            <span class="open-menu-text"> THỜI TRANG NỮ</span></a></li>
+                        <li><a href="#">
+                            <img src="./images/open5.jpg"   class="open-menu-img" alt="">
+                            <span class="open-menu-text"> MÁY ẢNH & MÁY QUAY PHIM</span></a></li>
+                        <li><a href="#">
+                            <img src="./images/open6.jpg"   class="open-menu-img" alt="">
+                            <span class="open-menu-text"> MÁY TÍNH & LAPTOP</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menunav font-15">
+            <ul >
+                <li><a href="./index.html">TRANG CHỦ</a></li>
+                <li><a href="./about.html">GIỚI THIỆU</a></li>
+                <li><a href="./product.html">
+                    SẢN PHẨM 
+                    <i class="nav-arrow-down ti-angle-down"></i>
+                </a>
+                    <ul class="subnav">
+                        <li><a href="#">Đồ chơi</a></li>
+                        <li><a href="#">Điện thoại</a></li>
+                        <li><a href="#">Phụ kiện</a></li>
+                    </ul> 
+                </li>
+                <li><a href="#">KHUYẾN MÃI</a></li>
+                <li><a href="./article.html">TIN TỨC</a></li>
+                <li><a href="./contact.html">LIÊN HỆ</a></li>
+            </ul>                
+            </div>
+
+            <div class="return-section font-15">
+                <ul>
+                    <li class="return-left"><a href="#">CHÍNH SÁCH MUA HÀNG</a></li>
+                    <li class="return-right"><a href="#">ĐỔI TRẢ</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+
+        </section>
+        <!-- Kết thúc nav -->
+    </div>
+
+        <!-- Bắt đầu home -->        
+        <section id ="grid-section">
+            <section class="grid-container">
+                <div class="item1">
+                    <img id="item" src="./images/item1.png" width="790" height="360" onclick="changeImage" alt=""> 
+                    
+                </div>
+                <div class="item2">
+                    <img id="item" src="./images/item2.png" width="400" height="210" alt=""> 
+                    
+                </div>
+                <div class="item3"> 
+                    <img id="item" src="./images/item3.png" width="400" height="210" alt=""> 
+                    
+                </div>
+                <div class="item4">
+                    <img id="item" src="./images/item4.png" width="330" height="565"  alt="">
+                </div>    
+                <div class="clear"></div>
+
+            </section>            
+        </section>
+
+        <section id="benefit-boxes">
+        <div class="infor">
+            <div class="infor-img">
+                <img src="./images/infor1.png" alt="">                
+            </div>
+            <div class="infor-content">
+                <b class="font-16">Chất lượng hàng đầu</b>
+                <p class="font-14">Cam kết tất cả sản phẩm chính hãng 100%</p>                
+            </div>
+        </div>
+        
+        <div class="infor">
+            <div class="infor-img">
+                <img src="./images/infor2.png" alt="">                
+            </div>            
+            <div class="infor-content">
+                <b class="font-16">Giao hàng siêu nhanh</b>
+                <p class="font-14">Chúng tôi cam kết giao hàng trong 24h</p>                
+            </div>
+        </div>
+
+        <div class="infor">
+            <div class="infor-img">
+                <img src="./images/infor3.png" alt="">                
+            </div>            
+            <div class="infor-content">
+                <b class="font-16">Mua hàng tiết kiệm</b>
+                <p class="font-14">Giảm giá & khuyến mãi với ưu đãi cực lớn</p>                
+            </div>
+        </div>
+
+        <div class="infor">
+            <div class="infor-img">
+                <img src="./images/infor4.png" alt="">   
+            </div>
+            <div class="infor-content">
+                <b class="font-16">Hỗ trợ online 24/7</b>            
+                <p class="font-14">Gọi ngay 0123.456.789 để được tư vấn</p>                
+            </div>
+        </div>
+
+        </section>
+    
+        <section id="cate-main">
+        <div class="cate-heading">Danh mục nổi bật</div>
+     
+         <div class="standout-categories">
+     
+             <div class="cate-section">
+                 <div class="cate-item"><img src="./images/cate1.png" alt=""></div>
+                 <div class="cate-title">Điện thoại & Phụ kiện</div>            
+             </div>
+     
+             <div class="cate-section">
+                 <div class="cate-item"><img src="./images/cate2.png" alt=""></div>
+                 <div class="cate-title">Thiết bị điện tử</div>            
+             </div>
+     
+             <div class="cate-section">
+                 <div class="cate-item"><img src="./images/cate3.png" alt=""></div>
+                 <div class="cate-title">Đồng hồ</div>            
+             </div>
+     
+             <div class="cate-section">
+                 <div class="cate-item"><img src="./images/cate4.png" alt=""></div>
+                 <div class="cate-title">Thời trang nam</div>            
+             </div>
+     
+             <div class="cate-section">
+                 <div class="cate-item"><img src="./images/cate5.png" alt=""></div>
+                 <div class="cate-title">Thời trang nữ</div>            
+             </div>
+     
+             <div class="cate-section">
+                 <div class="cate-item"><img src="./images/cate6.png" alt=""></div>
+                 <div class="cate-title">Máy tính & Laptop</div>            
+             </div>
+     
+             <div class="cate-section">
+                 <div class="cate-item"><img src="./images/cate7.png" alt=""></div>
+                 <div class="cate-title">Máy ảnh & Máy quay phim</div>            
+             </div>
+     
+         </div>
+         <div class="clear"></div>
+
+        </section>
+
+        <section id="Product"> 
+        <div class="product-heading">
+            <p>SẢN PHẨM MỚI</p>
+        </div>
+        <div class="product-main">
+
+        <div class="product-section">
+            <div class="product-icons">
+                <p class="onsale-left">-30%</p>
+                <p class="new-right">Mới</p>                
+            </div>            
+            <img class="product-img" src="./images/sanpham1.webp"  alt="">
+
+
+            <div class="product-bottom">
+                <div class="product-title">Son kem lì HERA Sensual...</div>
+                <div class="product-price">
+                    <del>600.000VND</del>| <span>420.000VND</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-section">
+            <div class="product-icons">
+                <p class="onsale-left">-30%</p>
+                <p class="new-right">Mới</p>                
+            </div>            
+            <img class="product-img" src="./images/sanpham1.webp"  alt="">
+
+
+            <div class="product-bottom">
+                <div class="product-title">Son kem lì HERA Sensual...</div>
+                <div class="product-price">
+                    <del>600.000VND</del>| <span>420.000VND</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-section">
+            <div class="product-icons">
+                <p class="onsale-left">-30%</p>
+                <p class="new-right">Mới</p>                
+            </div>            
+            <img class="product-img" src="./images/sanpham1.webp"  alt="">
+
+
+            <div class="product-bottom">
+                <div class="product-title">Son kem lì HERA Sensual...</div>
+                <div class="product-price">
+                    <del>600.000VND</del>| <span>420.000VND</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-section">
+            <div class="product-icons">
+                <p class="onsale-left">-30%</p>
+                <p class="new-right">Mới</p>                
+            </div>            
+            <img class="product-img" src="./images/sanpham1.webp"  alt="">
+
+
+            <div class="product-bottom">
+                <div class="product-title">Son kem lì HERA Sensual...</div>
+                <div class="product-price">
+                    <del>600.000VND</del>| <span>420.000VND</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-section">
+            <div class="product-icons">
+                <p class="onsale-left">-30%</p>
+                <p class="new-right">Mới</p>                
+            </div>            
+            <img class="product-img" src="./images/sanpham1.webp"  alt="">
+
+
+            <div class="product-bottom">
+                <div class="product-title">Son kem lì HERA Sensual...</div>
+                <div class="product-price">
+                    <del>600.000VND</del>| <span>420.000VND</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-section">
+            <div class="product-icons">
+                <p class="onsale-left">-30%</p>
+                <p class="new-right">Mới</p>                
+            </div>            
+            <img class="product-img" src="./images/sanpham1.webp"  alt="">
+
+
+            <div class="product-bottom">
+                <div class="product-title">Son kem lì HERA Sensual...</div>
+                <div class="product-price">
+                    <del>600.000VND</del>| <span>420.000VND</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+
+        
+        </section>
+
+        <section id="Product"> 
+            <div class="product-heading">
+                <p>ĐIỆN THOẠI PHỤ KIỆN</p>
+            </div>
+            <div class="product-main">
+    
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/Iphone 13 pro max.webp"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">Iphone 13 pro max</div>
+                    <div class="product-price">
+                        <del>6.000.000VND</del>| <span>4.200.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/Iphone 14 pro .jpg"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">Iphone 14 pro </div>
+                    <div class="product-price">
+                        <del>24.000.000VND</del>| <span>23.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/Vivo Y16.jpg"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">Vivo Y16</div>
+                    <div class="product-price">
+                        <del>6.000.000VND</del>| <span>4.200.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/OPPO A17.jpg"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">OPPO A17</div>
+                    <div class="product-price">
+                        <del>8.000.000VND</del>| <span>7.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/Iphone15promax.webp"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">Iphone 15 pro max</div>
+                    <div class="product-price">
+                        <del>35.000.000VND</del>| <span>34.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/Iphone 15.webp"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">Iphone 15</div>
+                    <div class="product-price">
+                        <del>21.000.000VND</del>| <span>20.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            </div>
+    
+            <div class="clear"></div>
+            
+            </section>        
+
+        <div class="banner">
+            <img class="banner-left" src="./images/banner1.png" ></img>
+            <img class="banner-right" src="./images/banner2.png"></img>
+        </div>
+        <section id="Product"> 
+            <div class="product-heading">
+                <p>Đồng hồ</p>
+            </div>
+            <div class="product-main">
+    
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/AW-Ultra-2.jpg"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">AW 2 Trail Loop</div>
+                    <div class="product-price">
+                        <del>21.600.000VND</del>| <span>20.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/AW-S9.jpg"  alt="">
+    
+                <div class="product-bottom">
+                    <div class="product-title">AW 9</div>
+                    <div class="product-price">
+                        <del>19.000.000VND</del>| <span>18.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/AW-Ultra-2-Alpine.jpg"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">AW 2 Alpine</div>
+                    <div class="product-price">
+                        <del>27.000.000VND</del>| <span>26.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/AW-Ultra-2-Ocean-Band.jpg"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">AW 2 Ocean Band</div>
+                    <div class="product-price">
+                        <del>21.000.000VND</del>| <span>20.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/LTE-AW9.jpg"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">AW 9 Sport Band </div>
+                    <div class="product-price">
+                        <del>19.000.000VND</del>| <span>18.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-icons">
+                    <p class="onsale-left">-30%</p>
+                    <p class="new-right">Mới</p>                
+                </div>            
+                <img class="product-img" src="./images/LTE-AW9-1.jpg"  alt="">
+    
+    
+                <div class="product-bottom">
+                    <div class="product-title">AW 9 Sport Band</div>
+                    <div class="product-price">
+                        <del>12.000.000VND</del>| <span>10.000.000VND</span>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            </div>
+    
+            <div class="clear"></div>
+            
+        </section>
+
+        <section id="company-logos">
+                <div class="column-logo"><a href="#"><img   class="company-img1" src="./images/company1.png" alt=""></a></div>
+                <div class="column-logo"><a href="#"><img   class="company-img2" src="./images/company2.png" alt=""></a></div>    
+                <div class="column-logo"><a href="#"><img   class="company-img3" src="./images/company3.png" alt=""></a></div>
+                <div class="column-logo"><a href="#"><img   class="company-img4" src="./images/company4.png" alt=""></a></div>
+                <div class="column-logo"><a href="#"><img   class="company-img5" src="./images/company5.png" alt=""></a></div>             
+                <div class="column-logo"><a href="#"><img   class="company-img6" src="./images/company6.png" alt=""></a></div>
+                <div class="clear"></div>
+
+        </section>
+
+
+        <section id="social-email-login">
+            <div id="social-media-icon">
+                <a href="" class="social-icons"><i class=" icons ti-facebook"></i></a>
+                <a href="" class="social-icons"><i class=" icons ti-twitter-alt"></i></a>
+                <a href="" class="social-icons"><i class=" icons ti-youtube"></i></a>
+                <a href="" class="social-icons"><i class=" icons ti-instagram"></i></a>
+            </div>
+            <div class="page-title">
+                <h1 class="page-title-1">ĐĂNG KÝ NHẬN EMAIL</h1>
+                <h3 class="page-title-2">Nhận thông tin sản phẩm mới</h3>
+            </div>
+            <div class="email-login-form">
+                <form action="">
+                    <input type="email" id="email" name="email" required>
+                    <input type="submit" value="Để lại">
+                </form>
+            </div>
+        </section>
+        <!-- Kết thúc home -->
+
+        <section id="footer">
+                <div class="text-footer">
+                    <div id="logo">
+                        <h1><a href="./index.html">MiShop</a></h1>
+                       
+                        
+                    </div>
+                    <p>
+                        MiShop là một cửa hàng bán hàng trực tuyến chuyên về các sản phẩm công nghệ, 
+                        đặc biệt là điện thoại di động và phụ kiện đi kèm.  
+                        Với phương châm "Sự hài lòng của khách hàng là niềm vui của chúng tôi", 
+                        MiShop tự tin mang đến cho khách hàng trải nghiệm mua sắm trực tuyến tuyệt vời và tiện lợi.
+                    </p>
+                    <br>
+                    <div>
+                        <p>
+                            <i class="ti-location-arrow"></i>
+                            Số 123 Đường Phan Chu Trinh, Quận 10, TP.HCM
+                        </p>
+                        <p>
+                            
+                            <i class="ti-mobile"></i>
+                            Điện thoại: 0123.456.789
+                        </p>
+                        <p>
+                            <i class="ti-email"></i>
+                            Email: MisakiFPT@.gmail.com
+
+                        </p>  
+                    </div>
+
+                </div>
+                <div class="menu-footer">
+                    <div class="text-menu-footer ">
+                        <h3>CHÍNH SÁCH ĐỔI TRẢ</h3>
+                    </div>
+                    <ul>
+                        <li><a href="">Chính sách mua hàng</a></li>
+                        <li><a href="">Chính sách đổi trả</a></li>
+                        <li><a href="">Giỏ hàng</a></li>
+                        <li><a href="">Thanh toán</a></li>
+                        <li><a href="">Tài khoản</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                <div class="menu-footer">
+                    <div class="text-menu-footer ">
+                        <h3>SẢN PHẨM</h3>
+                    </div>
+                    <ul>
+                        <li><a href="">Điện Thoại & Phụ Kiện</a></li>
+                        <li><a href="">Đồng Hồ</a></li>
+                        <li><a href="">Giày Dép Nam</a></li>
+                        <li><a href="">Giày Dép Nữ</a></li>
+                        <li><a href="">Máy Ảnh và Máy Quay Phim</a></li>
+                    </ul>
+                </div>
+                <section id="promotion">
+                    <h2>SẢN PHẨM MỚI</h2>
+                    <div class="promotion-main">
+                        <div class="promotion-img"><img src="./images/Iphone15promax.webp" width="64" height="64" alt=""></div>
+                        <div class="promotion-title">Iphone 15 pro max</div>
+                        <div class="promotion-price">
+                            <del>35.000.000VND</del>| <span>34.000.000VND</span>
+                        </div>          
+                    </div>
+                    <div class="promotion-main">
+                        <div class="promotion-img"><img src="./images/Iphone15promax.webp" width="64" height="64" alt=""></div>
+                        <div class="promotion-title">Iphone 15 pro max</div>
+                        <div class="promotion-price">
+                            <del>35.000.000VND</del>| <span>34.000.000VND</span>
+                        </div>          
+                    </div>
+                    <div class="promotion-main">
+                        <div class="promotion-img"><img src="./images/Iphone15promax.webp" width="64" height="64" alt=""></div>
+                        <div class="promotion-title">Iphone 15 pro max</div>
+                        <div class="promotion-price">
+                            <del>35.000.000VND</del>| <span>34.000.000VND</span>
+                        </div>          
+                    </div>
+                </section>
+                <div class="clear"></div>
+        </section>
+
+    </div>
+
+
+    <script >
+        /* slideshow */
+        var index = 1;
+        changeImage = function(){
+            var imgs =["./images/item1.png", "./images/item5.png","./images/item6.png"];
+            document.getElementById('item').src =imgs[index];
+            index++;
+            if(index==3){
+                index = 0;
+            }
+        }
+        setInterval(changeImage,2000);
+        /*  */
+            </script>
+</body>
+</html>

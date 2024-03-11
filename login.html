@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <h2>Đăng nhập</h2>
+    <form action="" id="register-login">
+    <div class="form-group">
+        <label for="">Tên đăng nhập:</label> <br>
+        <input id="user" placeholder="Nhập tên đăng nhập" class="form-control" name="id" type="text"> <br>
+    </div>
+    <div class="form-group">
+        <label for="">Mật khẩu:</label> <br>
+        <input id="pass" placeholder="Nhập mật khẩu" class="form-control" name="" type="Password">
+    </div>
+    
+    <div  class="form-group">
+        <button onclick=" return checkform()" class="form-button" type="submit">Đăng nhập</button>
+    </div>
+    
+    
+  </form>
+  <div id="onform">
+    
+  </div>
+
+  <script>
+    function checkform(){
+        var user = document.getElementById("user");
+        var pass = document.getElementById("pass");
+if( user.value != ""){
+    if(user.value.length<8){
+        alert("Vui lòng nhập tên đăng nhập >=8 kí tự");
+        user.focus();
+        return false;
+    }
+
+}else{
+   alert("Vui lòng nhập tên đăng nhập");
+    user.focus();
+    return false; 
+}
+if(pass.value != ""){
+    if(pass.value.length <8){
+        alert("Vui lòng nhập mật khẩu >= 8 kí tự");
+        pass.focus();
+        return false;
+    }
+
+}else{
+    alert("Vui lòng nhập mật khẩu");
+    pass.focus();
+    return false;
+}
+    var kq =`<h2>Đăng nhập thành công</h2>
+    <p>Tên đăng nhập: </p> <span>`+user.value+`</span></p>
+    <p>Mật khẩu: </p> <span>`+pass.value+`</span></p>`;
+    document.getElementById("onform").innerHTML = kq;
+
+}
+  </script>
+</body>
+</html>

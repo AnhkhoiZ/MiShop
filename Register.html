@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <h2>ĐĂNG KÝ</h2>
+    <form action="" method="post" enctype="multipart/form-data" id="register-login">
+        <div class="form-group">
+            <label for="">HỌ VÀ TÊN:</label> <br>
+            <input id="user" placeholder="Nhập tên đăng ký" class="form-control" name="id" type="text"> <br>
+        </div>
+        <div class="form-group">
+            <label for="">MẬT KHẨU:</label> <br>
+            <input id="pass" placeholder="Nhập mật khẩu" class="form-control" name="" type="Password">
+        </div>
+        <div class="form-group">
+            <label for="">NHẬP LẠI MẬT KHẨU:</label> <br>
+            <input id="pass2" placeholder="Nhập lại mật khẩu" class="form-control" name="" type="Password">
+        </div>
+        
+        <div class="form-group">
+            <button onclick=" return checkform()" class="form-button">ĐĂNG KÝ</button>
+            <button class="form-button">HỦY</button>
+            <button class="form-button" type="reset">RESET</button>
+        </div>
+    </form>
+    <div id="onform">
+
+    </div>
+
+    <script>
+        function checkform(){
+            var user = document.getElementById("user");
+            var pass = document.getElementById("pass");
+            var pass2 = document.getElementById("pass2");
+            
+    if( user.value != ""){
+        if(user.value.length<8){
+            alert("Vui lòng nhập tên đăng nhập >=8 kí tự");
+            user.focus();
+            return false;
+        }
+    
+    }else{
+       alert("Vui lòng nhập tên đăng ký");
+        user.focus();
+        return false; 
+    }
+    if(pass.value != ""){
+        if(pass.value.length <8){
+            alert("Vui lòng nhập mật khẩu >= 8 kí tự");
+            pass.focus();
+            return false;
+        }
+    
+    }else{
+        alert("Vui lòng nhập mật khẩu");
+        pass.focus();
+        return false;
+    }
+    
+    if( pass2.value != ""){
+        if(pass2.value != pass.value){
+            alert("Mật khẩu không trùng khớp");
+            pass2.focus();
+            return false;
+        }
+    
+    }else{
+       alert("Vui lòng nhập lại mật khẩu");
+        pass2.focus();
+        return false; 
+    }
+    var kq =`<h2>Đăng ký thành công</h2>
+    <p>Tên đăng nhập: </p> <span>`+user.value+`</span></p>
+    <p>Mật khẩu: </p> <span>`+pass.value+`</span></p>`;
+    document.getElementById("onform").innerHTML = kq;
+    
+    }
+      </script>
+</body>
+</html>
